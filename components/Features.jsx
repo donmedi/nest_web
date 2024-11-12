@@ -61,12 +61,12 @@ const Features = () => {
     >
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-2 lg:text-5xl">
-          Our Core Feature is just for you
+        <h2 className="text-3xl font-bold mb-5 lg:text-5xl">
+          Our Core Feature is just <br /> for you
         </h2>
-        <p className="text-gray-600">
-          Nestpay provides the right tool to enjoy the most seamless payment
-          processing system
+        <p className="text-gray-600 text-md">
+          Nestpay provides the right tool to enjoy the most seamless <br />{" "}
+          payment processing system
         </p>
       </div>
 
@@ -78,7 +78,7 @@ const Features = () => {
             className="bg-primary text-white rounded-xl px-6 py-12 flex flex-col items-center shadow-lg gap-6 "
           >
             <div
-              className="w-16 h-16 rounded-full bg-primary"
+              className="w-16 h-20 rounded-full bg-primary"
               style={{
                 backgroundImage: `url(${feature.iconPath})`,
                 backgroundSize: "cover",
@@ -89,10 +89,10 @@ const Features = () => {
 
             <div className="space-y-6">
               {" "}
-              <h3 className="text-xl text-center font-greycliff-medium mb-2">
+              <h3 className="text-xl text-center font-bold font-greycliff-medium mb-2">
                 {feature.title}
               </h3>
-              <p className="text-center text-sm">{feature.description}</p>
+              <p className="text-center text-md">{feature.description}</p>
             </div>
           </div>
         ))}
@@ -106,7 +106,7 @@ const Features = () => {
               <CarouselItem key={index}>
                 <div className="bg-primary h-[300px] text-white rounded-xl p-6 flex flex-col items-center shadow-lg gap-6">
                   <div
-                    className="w-16 h-16 rounded-full bg-blue-800"
+                    className="w-16 h-14 rounded-full bg-blue-800"
                     style={{
                       backgroundImage: `url(${feature.iconPath})`,
                       backgroundSize: "cover",
@@ -117,7 +117,7 @@ const Features = () => {
                   <h3 className="text-xl font-semibold mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-center text-sm">{feature.description}</p>
+                  <p className="text-center text-md">{feature.description}</p>
                 </div>
               </CarouselItem>
             ))}{" "}

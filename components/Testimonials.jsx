@@ -61,15 +61,17 @@ const Testimonials = () => {
           <CarouselContent className="hidden md:flex">
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="basis-1/3 p-4">
-                <div className="bg-blue-500 text-white rounded-xl h-[541px] p-6 shadow-lg flex flex-col justify-between ">
+                <div className="bg-blue-500 text-white rounded-xl h-[481px] p-6 shadow-lg flex flex-col justify-between ">
                   <div className="">
                     {" "}
                     <p className="text-sm font-semibold mb-2">
                       TESTIMONIAL {testimonial.id}
                     </p>
-                    <p className="text-lg leading-relaxed mb-4">
-                      “{testimonial.text}”
+                    <p className="text-lg font-bold leading-relaxed mb-4">
+                      “<br />
+                      {testimonial.text} <br />
                     </p>
+                    <p className="text-end">"</p>
                   </div>
 
                   <div className="flex items-center mt-4">
@@ -82,7 +84,7 @@ const Testimonials = () => {
                     />
 
                     <div className="ml-3">
-                      <p className="font-medium">{testimonial.name}</p>
+                      <p className="font-bold">{testimonial.name}</p>
                       <p className="text-sm text-gray-200">
                         {testimonial.email}
                       </p>
@@ -128,12 +130,12 @@ const Testimonials = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="text-white hidden md:flex">
+          {/* <CarouselPrevious className="text-white hidden md:flex">
             Previous
           </CarouselPrevious>
           <CarouselNext className="text-white hidden md:flex">
             Next
-          </CarouselNext>
+          </CarouselNext> */}
         </Carousel>
       </div>
     </div>

@@ -9,8 +9,9 @@ const HowItWorks = () => {
           <div
             className="flex justify-center  bg-cover bg-center w-full"
             style={{
-              backgroundImage: "url('/img/brownMan.png')",
-
+              backgroundImage: "url('/img/guy22.png')",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
               height: "500px",
             }}
           ></div>
@@ -24,27 +25,27 @@ const HowItWorks = () => {
             achieved in less than 3 minutes.
           </p>
           <ul className=" mb-6 grid  grid-cols-2  justify-center">
-            <li className="flex items-center">
+            <li className="flex items-center text-md">
               <span className="text-blue-600 mr-2">
                 <IoCheckbox />
               </span>{" "}
               Create account
             </li>
-            <li className="flex items-center">
+            <li className="flex items-center text-md">
               <span className="text-blue-600 mr-2">
                 <IoCheckbox />
               </span>{" "}
               Set Password
             </li>
-            <li className="flex items-center mt-3">
+            <li className="flex items-center mt-3 text-md">
               <span className="text-blue-600 mr-2">
                 <IoCheckbox />
               </span>{" "}
               Start transacting
             </li>
           </ul>
-          <button className="bg-blue-600 w-fit text-white py-2 px-6 rounded-md font-semibold hover:bg-blue-700 transition duration-200">
-            Get started
+          <button className="bg-blue-600 w-fit text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition duration-200">
+            Get started →
           </button>
         </div>
       </div>
