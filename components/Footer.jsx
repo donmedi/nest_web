@@ -26,7 +26,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="name@example.com"
-              className="border border-gray-300 rounded-l-md p-2 w-60 text-sm"
+              className="border border-gray-300 rounded-l-md p-2 w-60 text-sm bg-[#E7EAEE] "
             />
             <button className="bg-blue-600 text-white px-4 rounded-r-md">
               →
@@ -81,7 +81,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-blue-500">
+                <Link href="/privacy" className="text-sm hover:text-blue-500">
                   Privacy Policy
                 </Link>
               </li>

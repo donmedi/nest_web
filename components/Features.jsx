@@ -78,7 +78,7 @@ const Features = () => {
             className="bg-primary text-white rounded-xl px-6 py-12 flex flex-col items-center shadow-lg gap-6 "
           >
             <div
-              className="w-16 h-20 rounded-full bg-primary"
+              className="w-14 h-14 rounded-full bg-blue-800"
               style={{
                 backgroundImage: `url(${feature.iconPath})`,
                 backgroundSize: "cover",
@@ -104,9 +104,9 @@ const Features = () => {
           <CarouselContent>
             {featureData.map((feature, index) => (
               <CarouselItem key={index}>
-                <div className="bg-primary h-[300px] text-white rounded-xl p-6 flex flex-col items-center shadow-lg gap-6">
+                <div className="bg-primary  text-white rounded-xl p-6 flex flex-col items-center shadow-lg gap-6">
                   <div
-                    className="w-16 h-14 rounded-full bg-blue-800"
+                    className="w-16 h-16 rounded-full bg-blue-800"
                     style={{
                       backgroundImage: `url(${feature.iconPath})`,
                       backgroundSize: "cover",

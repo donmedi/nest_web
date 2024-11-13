@@ -10,23 +10,24 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { LuMenu } from "react-icons/lu";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden"; // Import VisuallyHidden
+import Image from "next/image";
 
 const links = [
   {
     name: "about us",
-    path: "/about",
+    path: "#about",
   },
   {
     name: "features",
-    path: "/features",
+    path: "#features",
   },
   {
     name: "how it works",
-    path: "/projects",
+    path: "#howItWorks",
   },
   {
     name: "faqs",
-    path: "/faqs",
+    path: "#faqs",
   },
 ];
 
@@ -38,14 +39,20 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <LuMenu className="text-[32px] text-black" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col" side="right">
+      <SheetContent className="flex flex-col bg-white" side="right">
         <VisuallyHidden>
           <SheetTitle>Menu</SheetTitle> {/* Hides the title visually */}
         </VisuallyHidden>
 
         <div className="mt-32 mb-14 text-center text-2xl">
           <Link href={"/"}>
-            <h1 className="text-3xl font-semibold">NestPay</h1>
+            <Image
+              src="/img/logo.png"
+              alt="logo"
+              width={120}
+              height={120}
+              className="mx-auto"
+            />
           </Link>
         </div>
 
@@ -57,8 +64,8 @@ const MobileNav = () => {
                 href={link.path}
                 className={`${
                   link.path === pathname &&
-                  "text-accent  border-b-2 border-accent"
-                } text-xl capitalize hover:text-accent transition-all`}
+                  "text-primary  border-b-2 border-primary"
+                } text-xl capitalize hover:text-primary transition-all`}
               >
                 {link.name}
               </Link>

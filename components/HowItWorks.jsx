@@ -1,5 +1,7 @@
 import React from "react";
 import { IoCheckbox } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
+import GetStartedBtn from "./getStartedBtn";
 
 const HowItWorks = () => {
   return (
@@ -44,9 +46,7 @@ const HowItWorks = () => {
               Start transacting
             </li>
           </ul>
-          <button className="bg-blue-600 w-fit text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition duration-200">
-            Get started →
-          </button>
+          <GetStartedBtn />
         </div>
       </div>
     </div>

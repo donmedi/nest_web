@@ -48,7 +48,7 @@ const FAQ = () => {
           <div key={index} className="border-b ">
             <button
               onClick={() => toggleAnswer(index)}
-              className="w-full text-left py-4 flex justify-between items-center  text-lg font-medium text-gray-800 focus:outline-none"
+              className="w-full text-left py-4 flex justify-between items-center  text-xl font-medium text-gray-800 focus:outline-none"
             >
               {item.question}
               <span className="text-xl">
@@ -60,7 +60,7 @@ const FAQ = () => {
                 activeIndex === index ? "max-h-40" : "max-h-0"
               }`}
             >
-              <div className="py-2 px-4 text-gray-600 bg-gray-50 rounded">
+              <div className="py-2 px-4 text-gray-600 text-[18px] bg-gray-50 rounded border-2 border-gray-300">
                 {item.answer}
               </div>
             </div>

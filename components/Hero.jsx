@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import GetStartedBtn from "./getStartedBtn";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <div
-      cl
       style={{
         backgroundImage: "url('/img/banner_bg2.png')",
 
@@ -27,24 +28,27 @@ const Hero = () => {
                 streamline and enhance your financial operations over 100
                 countries.
               </p>
-              <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-blue-700 transition duration-200">
-                Get started →
-              </button>
+              <GetStartedBtn />
             </div>
             <div className="space-y-4">
               <div className="flex justify-center lg:justify-start mt-4 gap-4">
-                <Image
-                  src="/img/googleBtn.png"
-                  alt="Get it on Google Play"
-                  width={150}
-                  height={150}
-                />
-                <Image
-                  src="/img/appleBtn.png"
-                  alt="Download on the App Store"
-                  width={150}
-                  height={150}
-                />
+                <Link href="#">
+                  <Image
+                    src="/img/googleBtn.png"
+                    alt="Get it on Google Play"
+                    width={150}
+                    height={150}
+                  />
+                </Link>
+                <Link href="#">
+                  {" "}
+                  <Image
+                    src="/img/appleBtn.png"
+                    alt="Download on the App Store"
+                    width={150}
+                    height={150}
+                  />
+                </Link>
               </div>
               <p className=" text-gray-500 text-sm text-center lg:text-left">
                 Download our apps, we have the best ratings
