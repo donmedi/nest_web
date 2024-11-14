@@ -60,7 +60,7 @@ const FAQ = () => {
                 activeIndex === index ? "max-h-40" : "max-h-0"
               }`}
             >
-              <div className="py-2 px-4 text-gray-600 text-[18px] bg-gray-50 rounded border-2 border-gray-300">
+              <div className="py-2 px-4 mt-6 text-gray-600 text-[18px] bg-gray-50 rounded border-2 border-gray-300">
                 {item.answer}
               </div>
             </div>

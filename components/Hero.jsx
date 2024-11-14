@@ -18,18 +18,24 @@ const Hero = () => {
     >
       <div className="container mx-auto h-full py-10 px-4 lg:px-0 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="text-left space-y-10 md:space-y-32">
-            <div className="space-y-5">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                Your Gateway to <br /> Global Finance
-              </h1>
-              <p className="text-gray-600">
-                NestPay is your all-in-one payment platform designed to
-                streamline and enhance your financial operations over 100
-                countries.
-              </p>
-              <GetStartedBtn />
+          <div className="text-left space-y-10 md:space-y-44">
+            <div className="">
+              {" "}
+              <div className="space-y-5">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                  Your Gateway to <br /> Global Finance
+                </h1>
+                <p className="text-gray-600 ">
+                  NestPay is your all-in-one payment platform designed to
+                  streamline and enhance your financial operations over 100
+                  countries.
+                </p>
+              </div>
+              <div className="mt-[50px]">
+                <GetStartedBtn />
+              </div>
             </div>
+
             <div className="space-y-4">
               <div className="flex justify-center lg:justify-start mt-4 gap-4">
                 <Link href="#">

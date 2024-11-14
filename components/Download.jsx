@@ -4,10 +4,10 @@ import React from "react";
 
 const Download = () => {
   return (
-    <div className="bg-blue-600 text-white py-12 px-6 md:px-20 rounded-xl shadow-lg max-w-5xl mx-5 md:mx-auto my-24 ">
+    <div className="bg-blue-600 relative text-white py-12 px-0 md:px-14 rounded-xl shadow-lg max-w-5xl mx-5 md:mx-auto my-24 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Text content */}
-        <div>
+        <div className="px-6">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center md:text-left">
             Getting started takes <br className="hidden md:block" /> just a few
             taps
@@ -36,18 +36,33 @@ const Download = () => {
           </div>
         </div>
 
-        {/* Image content */}
-        <div className="flex justify-center md:justify-end">
-          {/* <div className="bg-[url('/img/phoneDouble.png')] bg-contain bg-center bg-no-repeats w-[200px] h-[400px] "></div> */}
-          <Image
+        <div className=" ">
+          {/* <Image
             src="/img/phoneDouble.png"
-            alt="phone"
-            width={400}
-            height={400}
-            className="w-auto h-auto"
+            alt="Background image"
+            width={600}
+            height={600}
+            className="md:hidden"
+          /> */}
+
+          <div
+            className="md:hidden bg-cover bg-no-repeat bg-center w-full"
+            style={{
+              backgroundImage: "url('/img/phoneDouble.png')",
+
+              height: "600px",
+            }}
           />
         </div>
       </div>
+
+      <Image
+        src="/img/phoneDouble.png"
+        alt="Background image"
+        width={490}
+        height={490}
+        className="absolute -top-8 right-3  hidden md:block"
+      />
     </div>
   );
 };

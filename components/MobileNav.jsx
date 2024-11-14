@@ -58,10 +58,11 @@ const MobileNav = () => {
 
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
+            const href = pathname !== "/" ? `/${link.path}` : link.path;
             return (
               <Link
                 key={index}
-                href={link.path}
+                href={href}
                 className={`${
                   link.path === pathname &&
                   "text-primary  border-b-2 border-primary"

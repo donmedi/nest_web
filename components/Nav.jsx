@@ -21,22 +21,24 @@ const links = [
     path: "#faqs",
   },
 ];
+
 const Nav = () => {
   const pathname = usePathname();
 
   return (
     <nav className="flex gap-8">
       {links.map((link, index) => {
+        const href = pathname !== "/" ? `/${link.path}` : link.path;
         return (
           <Link
             className={`capitalize font-medium transition-all hover:text-blue-500 
-  ${
-    link.path === pathname
-      ? "text-blue-500 border-b-2 border-blue-500" // Active link styles
-      : "text-black" // Inactive link styles
-  }`}
+              ${
+                link.path === pathname
+                  ? "text-blue-500 border-b-2 border-blue-500"
+                  : "text-black"
+              }`}
             key={index}
-            href={link.path}
+            href={href}
           >
             {link.name}
           </Link>
