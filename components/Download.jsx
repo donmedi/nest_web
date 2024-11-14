@@ -4,10 +4,10 @@ import React from "react";
 
 const Download = () => {
   return (
-    <div className="bg-blue-600 relative text-white py-12 px-0 md:px-14 rounded-xl shadow-lg max-w-5xl mx-5 md:mx-auto my-24 ">
+    <div className="bg-blue-600 relative text-white  px-0 md:px-14 rounded-xl shadow-lg max-w-5xl mx-5 md:mx-auto my-24 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Text content */}
-        <div className="px-6">
+        <div className="px-6 py-12">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center md:text-left">
             Getting started takes <br className="hidden md:block" /> just a few
             taps
@@ -61,7 +61,7 @@ const Download = () => {
         alt="Background image"
         width={490}
         height={490}
-        className="absolute -top-8 right-3  hidden md:block"
+        className="absolute -top-8 right-3   hidden md:block"
       />
     </div>
   );
