@@ -45,6 +45,7 @@ const Download = () => {
             className="md:hidden"
           /> */}
 
+          {/* Mobile Image */}
           <div
             className="md:hidden bg-cover bg-no-repeat bg-center w-full"
             style={{
@@ -56,6 +57,7 @@ const Download = () => {
         </div>
       </div>
 
+      {/* Desktop Image */}
       <Image
         src="/img/phoneDouble.png"
         alt="Background image"

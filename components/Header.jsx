@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link href={"/"}>
           <Image
-            src="/img/logo.png"
+            src="/img/logo.svg"
             alt="nestpay logo"
             width={120}
             height={120}

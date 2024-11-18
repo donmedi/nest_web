@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-6xl container mx-auto grid grid-cols-1 gap-8 text-center md:text-left md:grid-cols-2">
         <div>
           <Image
-            src={"/img/logo.png"}
+            src={"/img/logo.svg"}
             alt={"NestPay"}
             width={100}
             height={100}
@@ -76,7 +76,7 @@ const Footer = () => {
             <h4 className="text-sm font-semibold text-gray-500 mb-3">LEGAL</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-blue-500">
+                <Link href="/terms" className="text-sm hover:text-blue-500">
                   Terms and Conditions
                 </Link>
               </li>
